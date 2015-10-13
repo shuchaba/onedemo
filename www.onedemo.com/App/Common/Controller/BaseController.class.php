@@ -14,4 +14,7 @@ class BaseController extends Controller{
     public function _empty($name){
         $this->error();//需要设置TMPL_ACTION_ERROR
     }
+//    protected function _initialize(){
+//
+//    }
 }

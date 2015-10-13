@@ -16,61 +16,17 @@
             <a href="" class='close'></a>
         </dd>
     </dl>
-    <dl class='paper a2'>
-        <dt>
-            <span class='username'>后盾网</span>
-            <span class='num'>No.00001</span>
-        </dt>
-        <dd class='content'>大家今天要好好把后台布局完成大家今天要好好把后台布局完成大家今天要好好把后台布局完成</dd>
-        <dd class='bottom'>
-            <span class='time'>今天08:30</span>
-            <a href="" class='close'></a>
-        </dd>
-    </dl>
-    <dl class='paper a3'>
-        <dt>
-            <span class='username'>后盾网</span>
-            <span class='num'>No.00001</span>
-        </dt>
-        <dd class='content'>大家今天要好好把后台布局完成大家今天要好好把后台布局完成大家今天要好好把后台布局完成</dd>
-        <dd class='bottom'>
-            <span class='time'>今天08:30</span>
-            <a href="" class='close'></a>
-        </dd>
-    </dl>
-    <dl class='paper a4'>
-        <dt>
-            <span class='username'>后盾网</span>
-            <span class='num'>No.00001</span>
-        </dt>
-        <dd class='content'>大家今天要好好把后台布局完成大家今天要好好把后台布局完成大家今天要好好把后台布局完成</dd>
-        <dd class='bottom'>
-            <span class='time'>今天08:30</span>
-            <a href="" class='close'></a>
-        </dd>
-    </dl>
-    <dl class='paper a5'>
-        <dt>
-            <span class='username'>后盾网</span>
-            <span class='num'>No.00001</span>
-        </dt>
-        <dd class='content'>大家今天要好好把后台布局完成大家今天要好好把后台布局完成大家今天要好好把后台布局完成</dd>
-        <dd class='bottom'>
-            <span class='time'>今天08:30</span>
-            <a href="" class='close'></a>
-        </dd>
-    </dl>
 </div>
 
 <div id='send-form'>
     <p class='title'><span>许下你的愿望</span><a href="" id='close'></a></p>
-    <form action="" name='wish'>
+    <form  name='wish' method="post">
         <p>
-            <label for="username">昵称：</label>
+            <label for="username">标题：</label>
             <input type="text" name='username' id='username'/>
         </p>
         <p>
-            <label for="content">愿望：(您还可以输入&nbsp;<span id='font-num'>50</span>&nbsp;个字)</label>
+            <label for="content">内容：(您还可以输入&nbsp;<span id='font-num'>50</span>&nbsp;个字)</label>
             <textarea name="content" id='content'></textarea>
         <div id='phiz'>
             <img src="{C('TMPL_PARSE_STRING.__IMG__')}/phiz/zhuakuang.gif" alt="抓狂" />
@@ -88,6 +44,24 @@
         <span id='send-btn'></span>
     </form>
 </div>
+<script>
+$("#send-btn").click(function(){
+    var title = $("#username").val();
+    var content = $("#content").val();
+    if(title == '' || content == ''){
+        alert('标题与内容不能为空');
+        $("#username").focus();
+        return false;
+    }
+    $.post("{U('index/add')}",{ title:title,content:content },function(data){
+        if(data==1){
+            alert(data.message);
+        }else{
+            alert(data.message);
+        }
+    },'json');
+});
+</script>
 <!--[if IE 6]>
 <script type="text/javascript" src="{C('TMPL_PARSE_STRING.__JS__')}/iepng.js"></script>
 <script type="text/javascript">
