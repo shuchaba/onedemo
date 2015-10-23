@@ -1,0 +1,683 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>医学百科_医药百科_药品百科_医疗器械百科-求医网
+</title><meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link type="image/x-icon" rel="Icon" href="http://s1.qiuyi.cn/qiuyi/img/favicon.ico" />
+<link type="image/x-icon" rel="Shortcut Icon" href="http://s1.qiuyi.cn/qiuyi/img/favicon.ico" />
+<link type="image/x-icon" rel="Bookmark" href="http://s1.qiuyi.cn/qiuyi/img/favicon.ico" />
+<link media="screen,projection" type="text/css" href="http://s1.qiuyi.cn/qiuyi/131129/css/a/qy_bd.css" rel="stylesheet">
+<link rel="stylesheet" href="http://s1.qiuyi.cn/public/login/css/login.css?v=0.9" />
+<script src="http://s1.qiuyi.cn/public/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+</script>
+
+
+</head>
+<body>
+<style type="text/css">
+.top{border-bottom:1px solid #DFDFDF;height:24px;overflow:hidden;background-color:#f7f7f7;color:#999}
+.top .container_24{position:relative;margin:0 auto;text-align:left;width:960px;font-family:"宋体"}
+</style>
+<div class="top h_l top_bar">
+	<div class="container_24">
+		<script type="text/javascript" src="http://s1.qiuyi.cn/qiuyi/common/specialHeader.js?2014" charset="utf-8"></script>
+		<div class="ab_r">
+			<a id="loginStart" href="#" hidefocus="true">登录</a> | 
+			<a target="_blank" href="http://www.qiuyi.cn/register?13642036352081" hidefocus="true">注册</a> |
+			<a href="http://www.qiuyi.cn/company/download" target="_blank" class="green" hidefocus="true">手机版</a> | 
+			<a class="pf_icon orange" target="_blank" href="http://s1.qiuyi.cn/qiuyi/cooper/peifu/index.html" hidefocus="true">先行赔付</a>
+		</div>
+		<!-- 
+		<a target="_blank" title="求医首页" href="http://www.qiuyi.cn" hidefocus="true">首页</a> | <a target="_blank" title="找医院" href="http://www.qiuyi.cn/ghospitals" hidefocus="true">找医院</a> | <a target="_blank" title="找医生" href="http://www.qiuyi.cn/doctors" hidefocus="true">找医生</a> | <a target="_blank" title="在线问答" href="http://ask.qiuyi.cn" hidefocus="true">在线问答</a> | <a target="_blank" title="预约挂号" href="http://guahao.qiuyi.cn" hidefocus="true">预约挂号</a> | <a target="_blank" title="求医疾病库" href="http://jibing.qiuyi.cn" hidefocus="true">疾病库</a> | <a target="_blank" title="药品库" href="http://ypk.qiuyi.cn/index.html" hidefocus="true">药品库</a> | <a target="_blank" title="求医新闻" href="http://news.qiuyi.cn" hidefocus="true">新闻</a> | <a target="_blank" title="求医百科" href="http://ci.qiuyi.cn" hidefocus="true">百科</a> | <a target="_blank" title="求医图库" href="http://tuku.qiuyi.cn" hidefocus="true">图库</a> | <a target="_blank" title="经验分享" href="http://share.qiuyi.cn" hidefocus="true">经验分享</a> | <a target="_blank" title="专家访谈" href="http://zj.qiuyi.cn" hidefocus="true">专家访谈</a>
+		<div class="ab_r"> <a id="loginStart" href="#" hidefocus="true">登录</a> | <a target="_blank" id="register" href="http://www.qiuyi.cn/register" hidefocus="true">注册</a> | <a href="http://www.qiuyi.cn/company/download" target="_blank" class="green" hidefocus="true">手机版</a> </div>
+	 	-->
+	</div>
+</div>
+<div class="head2 container_16">		
+	<h1><a href="/" alt='求医网' class="logo">求医网</a></h1>		
+	<div class="hed_r" style="width:734px;">
+					<a target="_blank" href="http://help.qiuyi.cn"><img src="http://s1.qiuyi.cn/qiuyi/images/735651.jpg" /></a>
+			</div>
+</div>
+<div class="bk_nav nav container_16">
+	<ul class="menu1 ul_h">
+		<li ><a href="/">百科首页</a></li>
+		<li class="cur"><a href="/html/disease/index.html">疾 病</a></li>
+		<li ><a href="/list/drugsku/1/index.html">药 品</a></li>
+		<li ><a href="/list/apparatusku/1/index.html">器 械</a></li>
+		<li ><a href="/list/foodku/1/index.html">食材</a></li>
+		<li ><a href="/list/symptomsku/1/index.html">症状</a></li>
+	</ul>
+	<div class="sch">
+		<input type="text" value="" onFocus="if (this.value=='搜索疾病、药品、器械') {this.value=''}" onBlur="if(this.value==''){this.value='搜索疾病、药品、器械'}" name="q" id="q" class="s_text graya" />  
+		<input title="搜索" type="button" onClick="search();" value="&nbsp;" id="searchButton" class="s_btn" />			
+	</div>
+</div><!--写入页面内-->
+<link type="text/css" href="http://s1.qiuyi.cn/baike/public/css/bk.css" rel="stylesheet">
+<style type="text/css">
+.bk_lis{padding:10px 0 10px 10px}
+.bk_lis h3{background-position: 0 32px;height:33px;background-repeat:repeat-x;margin-right:10px;margin-bottom:10px}
+.bk_lis .bd a{background-position:-550px -198px;text-decoration:underline;width: 142px;display:block;float:left;padding-left:15px;font-size:14px;line-height:26px;height:26px;overflow:hidden}
+.bkl_con{position:relative}
+.bkl_con .bd{height:auto;height:132px;overflow:hidden}
+.bkl_con_all .bd{height:auto}
+.bk_lis .tool{background-position:28px -121px;position:absolute;padding-right:15px;top:5px;right:10px;color:#396;line-height:28px;cursor:pointer}
+.bkl_con_all .tool{background-position:28px -149px;}
+</style>
+<div class="one_m container_16">
+	<div class="path">
+			您的位置： <a href="http://ci.qiuyi.cn">首页</a> > <a>疾 病</a>	
+	</div>
+	<div class="bk_lis bor">
+	
+	
+		<div class="map_list_block">
+							<div class="bkl_con bkl_con_all">
+					<h3><a href="http://ci.qiuyi.cn/html/disease/1/index.html" target="_blank">内科</a></h3>
+					<!--<span class="tool">展开</span>-->
+					<div class="bd clearfix">
+
+
+
+							<a href="http://ci.qiuyi.cn/html/disease/2/index.html" target="_blank" hidefocus="true">呼吸科</a>
+
+																			<a href="http://ci.qiuyi.cn/html/disease/16/index.html" target="_blank" hidefocus="true">间质性肺病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/17/index.html" target="_blank" hidefocus="true">哮喘</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/18/index.html" target="_blank" hidefocus="true">呼吸系统感染</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/19/index.html" target="_blank" hidefocus="true">职业肺病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/20/index.html" target="_blank" hidefocus="true">慢性阻塞性肺病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/21/index.html" target="_blank" hidefocus="true">呼吸内科疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/22/index.html" target="_blank" hidefocus="true">慢性咳嗽</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/23/index.html" target="_blank" hidefocus="true">胸膜疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/625/index.html" target="_blank" hidefocus="true">小儿哮喘</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/626/index.html" target="_blank" hidefocus="true">肺纤维化</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/627/index.html" target="_blank" hidefocus="true">肺气肿</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/629/index.html" target="_blank" hidefocus="true">支气管炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/771/index.html" target="_blank" hidefocus="true">感冒</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/809/index.html" target="_blank" hidefocus="true">肺吸虫病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/871/index.html" target="_blank" hidefocus="true">肺栓塞</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/992/index.html" target="_blank" hidefocus="true">支原体肺炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/993/index.html" target="_blank" hidefocus="true">肺大泡</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/994/index.html" target="_blank" hidefocus="true">慢性阻塞性肺疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/995/index.html" target="_blank" hidefocus="true">大叶性肺炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/996/index.html" target="_blank" hidefocus="true">吸入性肺炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/997/index.html" target="_blank" hidefocus="true">病毒性肺炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/998/index.html" target="_blank" hidefocus="true">咳嗽性哮喘</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/999/index.html" target="_blank" hidefocus="true">肺大疱</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1000/index.html" target="_blank" hidefocus="true">特发性肺纤维化</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1001/index.html" target="_blank" hidefocus="true">大咯血</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1002/index.html" target="_blank" hidefocus="true">细菌性肺炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1003/index.html" target="_blank" hidefocus="true">急性支气管炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1141/index.html" target="_blank" hidefocus="true">流行性感冒</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1187/index.html" target="_blank" hidefocus="true">囊性纤维化</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1263/index.html" target="_blank" hidefocus="true">百日咳</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1303/index.html" target="_blank" hidefocus="true">超敏反应</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1360/index.html" target="_blank" hidefocus="true">肺部感染</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1361/index.html" target="_blank" hidefocus="true">肺心病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1389/index.html" target="_blank" hidefocus="true">高原病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1429/index.html" target="_blank" hidefocus="true">结节病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1492/index.html" target="_blank" hidefocus="true">球形肺炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1580/index.html" target="_blank" hidefocus="true">矽肺</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1590/index.html" target="_blank" hidefocus="true">腺病毒肺炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1629/index.html" target="_blank" hidefocus="true">衣原体肺炎</a>
+
+							<a href="http://ci.qiuyi.cn/html/disease/3/index.html" target="_blank" hidefocus="true">普通内科</a>
+
+																			<a href="http://ci.qiuyi.cn/html/disease/13/index.html" target="_blank" hidefocus="true">变态反应</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/14/index.html" target="_blank" hidefocus="true">内科疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/15/index.html" target="_blank" hidefocus="true">中毒与职业病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/983/index.html" target="_blank" hidefocus="true">酒精中毒</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/985/index.html" target="_blank" hidefocus="true">脱水</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/986/index.html" target="_blank" hidefocus="true">体温过低</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1193/index.html" target="_blank" hidefocus="true">胃疼</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1231/index.html" target="_blank" hidefocus="true">通风病</a>
+
+							<a href="http://ci.qiuyi.cn/html/disease/4/index.html" target="_blank" hidefocus="true">消化科</a>
+
+																			<a href="http://ci.qiuyi.cn/html/disease/24/index.html" target="_blank" hidefocus="true">胃食管反流病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/25/index.html" target="_blank" hidefocus="true">胃肠息肉</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/26/index.html" target="_blank" hidefocus="true">便秘</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/27/index.html" target="_blank" hidefocus="true">功能性胃肠病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/28/index.html" target="_blank" hidefocus="true">炎症性肠病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/29/index.html" target="_blank" hidefocus="true">消化内科疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/30/index.html" target="_blank" hidefocus="true">胃炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/31/index.html" target="_blank" hidefocus="true">结直肠炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/759/index.html" target="_blank" hidefocus="true">胃溃疡</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/772/index.html" target="_blank" hidefocus="true">萎缩性胃炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/810/index.html" target="_blank" hidefocus="true">蛔虫病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/814/index.html" target="_blank" hidefocus="true">腹痛</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/880/index.html" target="_blank" hidefocus="true">厌食症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/890/index.html" target="_blank" hidefocus="true">蜘蛛痣</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1139/index.html" target="_blank" hidefocus="true">细菌性痢疾</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1184/index.html" target="_blank" hidefocus="true">功能性消化不良</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1185/index.html" target="_blank" hidefocus="true">脾功能亢进</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1188/index.html" target="_blank" hidefocus="true">老年便秘</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1191/index.html" target="_blank" hidefocus="true">急性胃炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1192/index.html" target="_blank" hidefocus="true">大便带血</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1195/index.html" target="_blank" hidefocus="true">幽门螺杆菌感染</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1196/index.html" target="_blank" hidefocus="true">食管炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1197/index.html" target="_blank" hidefocus="true">慢性浅表性胃炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1300/index.html" target="_blank" hidefocus="true">肠胃炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1332/index.html" target="_blank" hidefocus="true">胆汁返流性胃炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1353/index.html" target="_blank" hidefocus="true">呃逆</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1451/index.html" target="_blank" hidefocus="true">溃疡性肠炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1458/index.html" target="_blank" hidefocus="true">痢疾</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1468/index.html" target="_blank" hidefocus="true">轮状病毒性肠炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1499/index.html" target="_blank" hidefocus="true">乳糜泻</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1530/index.html" target="_blank" hidefocus="true">十二指肠憩室</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1531/index.html" target="_blank" hidefocus="true">食道溃疡</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1532/index.html" target="_blank" hidefocus="true">食管裂孔疝</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1548/index.html" target="_blank" hidefocus="true">绦虫病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1570/index.html" target="_blank" hidefocus="true">伪膜性肠炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1572/index.html" target="_blank" hidefocus="true">胃窦炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1573/index.html" target="_blank" hidefocus="true">胃泌素瘤</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1575/index.html" target="_blank" hidefocus="true">胃石症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1576/index.html" target="_blank" hidefocus="true">胃下垂</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1577/index.html" target="_blank" hidefocus="true">胃脂肪瘤</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1578/index.html" target="_blank" hidefocus="true">胃潴留</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1627/index.html" target="_blank" hidefocus="true">厌食</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1640/index.html" target="_blank" hidefocus="true">应激性溃疡</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1641/index.html" target="_blank" hidefocus="true">幽门梗阻</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1680/index.html" target="_blank" hidefocus="true">胃结核</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1681/index.html" target="_blank" hidefocus="true">胃溃疡性穿孔</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1683/index.html" target="_blank" hidefocus="true">胃真菌病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1684/index.html" target="_blank" hidefocus="true">肠白塞病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1686/index.html" target="_blank" hidefocus="true">肠扭转综合征</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1687/index.html" target="_blank" hidefocus="true">肠气囊肿</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1688/index.html" target="_blank" hidefocus="true">肠气肿综合征</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1689/index.html" target="_blank" hidefocus="true">肠石性肠梗阻</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1691/index.html" target="_blank" hidefocus="true">肠系膜淋巴结结核</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1692/index.html" target="_blank" hidefocus="true">肠系膜淋巴结炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1701/index.html" target="_blank" hidefocus="true">肠易激综合征</a>
+
+							<a href="http://ci.qiuyi.cn/html/disease/5/index.html" target="_blank" hidefocus="true">内分泌科</a>
+
+																			<a href="http://ci.qiuyi.cn/html/disease/32/index.html" target="_blank" hidefocus="true">甲状腺疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/33/index.html" target="_blank" hidefocus="true">甲状腺癌</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/34/index.html" target="_blank" hidefocus="true">糖尿病足</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/35/index.html" target="_blank" hidefocus="true">肾上腺疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/36/index.html" target="_blank" hidefocus="true">痛风</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/37/index.html" target="_blank" hidefocus="true">糖尿病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/38/index.html" target="_blank" hidefocus="true">肥胖</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/39/index.html" target="_blank" hidefocus="true">内分泌科疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/612/index.html" target="_blank" hidefocus="true">甲亢</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/613/index.html" target="_blank" hidefocus="true">甲减甲状腺炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/614/index.html" target="_blank" hidefocus="true">甲状腺结节</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/615/index.html" target="_blank" hidefocus="true">甲状腺肿大</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/651/index.html" target="_blank" hidefocus="true">糖尿病眼病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/652/index.html" target="_blank" hidefocus="true">妊娠糖尿病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/653/index.html" target="_blank" hidefocus="true">特异性糖尿病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/762/index.html" target="_blank" hidefocus="true">甲减</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1128/index.html" target="_blank" hidefocus="true">糖尿病酮症酸中毒</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1129/index.html" target="_blank" hidefocus="true">亚急性甲状腺炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1130/index.html" target="_blank" hidefocus="true">结节性甲状腺肿</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1131/index.html" target="_blank" hidefocus="true">甲状旁腺功能减退症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1132/index.html" target="_blank" hidefocus="true">地方性甲状腺肿</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1133/index.html" target="_blank" hidefocus="true">糖尿病性视网膜病变</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1134/index.html" target="_blank" hidefocus="true">急性甲状腺炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1135/index.html" target="_blank" hidefocus="true">老年人糖尿病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1136/index.html" target="_blank" hidefocus="true">产后甲状腺炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1138/index.html" target="_blank" hidefocus="true">单纯性肥胖</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1171/index.html" target="_blank" hidefocus="true">男性更年期综合征</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1323/index.html" target="_blank" hidefocus="true">代谢性碱中毒</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1324/index.html" target="_blank" hidefocus="true">代谢性酸中毒</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1325/index.html" target="_blank" hidefocus="true">代谢综合征</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1336/index.html" target="_blank" hidefocus="true">低钙血症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1337/index.html" target="_blank" hidefocus="true">低钾血症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1338/index.html" target="_blank" hidefocus="true">低镁血症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1339/index.html" target="_blank" hidefocus="true">低钠血症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1340/index.html" target="_blank" hidefocus="true">低血糖</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1351/index.html" target="_blank" hidefocus="true">多毛症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1386/index.html" target="_blank" hidefocus="true">高血糖</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1422/index.html" target="_blank" hidefocus="true">甲状腺功能减退</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1423/index.html" target="_blank" hidefocus="true">甲状腺功能亢进</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1424/index.html" target="_blank" hidefocus="true">甲状腺结核</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1438/index.html" target="_blank" hidefocus="true">巨人症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1439/index.html" target="_blank" hidefocus="true">巨乳症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1647/index.html" target="_blank" hidefocus="true">原发性醛固酮增多症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1656/index.html" target="_blank" hidefocus="true">肢端肥大症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1665/index.html" target="_blank" hidefocus="true">侏儒症</a>
+
+							<a href="http://ci.qiuyi.cn/html/disease/6/index.html" target="_blank" hidefocus="true">风湿免疫科</a>
+
+																			<a href="http://ci.qiuyi.cn/html/disease/40/index.html" target="_blank" hidefocus="true">间质性肺病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/41/index.html" target="_blank" hidefocus="true">痛风</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/42/index.html" target="_blank" hidefocus="true">结缔组织病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/43/index.html" target="_blank" hidefocus="true">强直性脊柱炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/44/index.html" target="_blank" hidefocus="true">POEMS综合征</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/45/index.html" target="_blank" hidefocus="true">血管炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/46/index.html" target="_blank" hidefocus="true">类风湿性关节炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/47/index.html" target="_blank" hidefocus="true">红斑狼疮</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/650/index.html" target="_blank" hidefocus="true">抗衰老</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/777/index.html" target="_blank" hidefocus="true">系统性红斑狼疮</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/951/index.html" target="_blank" hidefocus="true">强制性脊椎炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1111/index.html" target="_blank" hidefocus="true">多发性硬化症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1227/index.html" target="_blank" hidefocus="true">抗磷脂抗体综合征</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1362/index.html" target="_blank" hidefocus="true">风湿病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1363/index.html" target="_blank" hidefocus="true">风湿热</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1452/index.html" target="_blank" hidefocus="true">赖特综合征</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1550/index.html" target="_blank" hidefocus="true">痛风性关节炎</a>
+
+							<a href="http://ci.qiuyi.cn/html/disease/7/index.html" target="_blank" hidefocus="true">肾内科</a>
+
+																			<a href="http://ci.qiuyi.cn/html/disease/48/index.html" target="_blank" hidefocus="true">狼疮性肾炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/49/index.html" target="_blank" hidefocus="true">尿路感染</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/50/index.html" target="_blank" hidefocus="true">肾衰</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/51/index.html" target="_blank" hidefocus="true">原发性肾炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/52/index.html" target="_blank" hidefocus="true">糖尿病肾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/53/index.html" target="_blank" hidefocus="true">紫癜性肾炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/54/index.html" target="_blank" hidefocus="true">肾病内科疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/55/index.html" target="_blank" hidefocus="true">多囊肾</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/740/index.html" target="_blank" hidefocus="true">尿毒症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/741/index.html" target="_blank" hidefocus="true">肾病综合症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/742/index.html" target="_blank" hidefocus="true">肾积水</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/743/index.html" target="_blank" hidefocus="true">肾囊肿</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/744/index.html" target="_blank" hidefocus="true">肾炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/869/index.html" target="_blank" hidefocus="true">尿崩症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/877/index.html" target="_blank" hidefocus="true">醛固酮增多症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/980/index.html" target="_blank" hidefocus="true">肾虚</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1143/index.html" target="_blank" hidefocus="true">慢性肾功能衰竭</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1145/index.html" target="_blank" hidefocus="true">IgA肾炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1147/index.html" target="_blank" hidefocus="true">间质性肾炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1214/index.html" target="_blank" hidefocus="true">肾下垂</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1216/index.html" target="_blank" hidefocus="true">肾损伤</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1228/index.html" target="_blank" hidefocus="true">狼疮肾炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1519/index.html" target="_blank" hidefocus="true">肾淀粉样变性</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1520/index.html" target="_blank" hidefocus="true">肾功能不全</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1522/index.html" target="_blank" hidefocus="true">肾萎缩</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1523/index.html" target="_blank" hidefocus="true">肾小管性酸中毒</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1568/index.html" target="_blank" hidefocus="true">微小病变型肾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1638/index.html" target="_blank" hidefocus="true">隐匿性肾小球肾炎</a>
+
+							<a href="http://ci.qiuyi.cn/html/disease/8/index.html" target="_blank" hidefocus="true">心血管科</a>
+
+																			<a href="http://ci.qiuyi.cn/html/disease/56/index.html" target="_blank" hidefocus="true">肺动脉高压</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/57/index.html" target="_blank" hidefocus="true">冠心病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/58/index.html" target="_blank" hidefocus="true">射频消融术</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/59/index.html" target="_blank" hidefocus="true">小儿心肌病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/60/index.html" target="_blank" hidefocus="true">心脏神经官能症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/61/index.html" target="_blank" hidefocus="true">高血压与肾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/62/index.html" target="_blank" hidefocus="true">起搏器植入</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/63/index.html" target="_blank" hidefocus="true">小儿心律失常</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/747/index.html" target="_blank" hidefocus="true">心律不齐</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/748/index.html" target="_blank" hidefocus="true">心绞痛</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/749/index.html" target="_blank" hidefocus="true">心脏病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/750/index.html" target="_blank" hidefocus="true">心肌炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/751/index.html" target="_blank" hidefocus="true">风心病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/752/index.html" target="_blank" hidefocus="true">风湿性心脏病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/763/index.html" target="_blank" hidefocus="true">高血压</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/815/index.html" target="_blank" hidefocus="true">高血脂</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/820/index.html" target="_blank" hidefocus="true">低血压</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1016/index.html" target="_blank" hidefocus="true">冠状动脉粥样硬化性心脏病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1075/index.html" target="_blank" hidefocus="true">变应性血管炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1173/index.html" target="_blank" hidefocus="true">扩张型心肌病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1174/index.html" target="_blank" hidefocus="true">继发性高血压</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1175/index.html" target="_blank" hidefocus="true">窦性心律失常</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1176/index.html" target="_blank" hidefocus="true">肥厚型心肌病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1177/index.html" target="_blank" hidefocus="true">心内膜炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1178/index.html" target="_blank" hidefocus="true">缺血性心肌病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1179/index.html" target="_blank" hidefocus="true">恶性高血压</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1180/index.html" target="_blank" hidefocus="true">动脉栓塞</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1181/index.html" target="_blank" hidefocus="true">酒精性心肌病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1182/index.html" target="_blank" hidefocus="true">冠状动脉造影</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1183/index.html" target="_blank" hidefocus="true">高血压病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1200/index.html" target="_blank" hidefocus="true">心脏神经症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1290/index.html" target="_blank" hidefocus="true">不稳定型心绞痛</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1308/index.html" target="_blank" hidefocus="true">川崎病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1357/index.html" target="_blank" hidefocus="true">房颤</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1358/index.html" target="_blank" hidefocus="true">房间隔缺损</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1593/index.html" target="_blank" hidefocus="true">心包炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1594/index.html" target="_blank" hidefocus="true">心肌梗塞</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1595/index.html" target="_blank" hidefocus="true">心肌缺血</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1596/index.html" target="_blank" hidefocus="true">心力衰竭</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1597/index.html" target="_blank" hidefocus="true">心源性休克</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1613/index.html" target="_blank" hidefocus="true">血管肉瘤</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1652/index.html" target="_blank" hidefocus="true">早搏</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1659/index.html" target="_blank" hidefocus="true">直立性低血压</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1694/index.html" target="_blank" hidefocus="true">肠系膜上动脉栓塞</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1695/index.html" target="_blank" hidefocus="true">肠系膜上动脉血栓形成</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1696/index.html" target="_blank" hidefocus="true">肠系膜上动脉压迫综合征</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1697/index.html" target="_blank" hidefocus="true">肠系膜上动脉综合征</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1698/index.html" target="_blank" hidefocus="true">肠系膜上静脉血栓形成</a>
+
+							<a href="http://ci.qiuyi.cn/html/disease/9/index.html" target="_blank" hidefocus="true">神经科</a>
+
+																			<a href="http://ci.qiuyi.cn/html/disease/64/index.html" target="_blank" hidefocus="true">植物神经紊乱</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/65/index.html" target="_blank" hidefocus="true">运动障碍疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/66/index.html" target="_blank" hidefocus="true">神经康复</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/67/index.html" target="_blank" hidefocus="true">颅脑脊髓感染</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/70/index.html" target="_blank" hidefocus="true">重症肌无力</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/68/index.html" target="_blank" hidefocus="true">癫痫病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/71/index.html" target="_blank" hidefocus="true">运动神经元病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/72/index.html" target="_blank" hidefocus="true">神经内科</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/655/index.html" target="_blank" hidefocus="true">硬化症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/666/index.html" target="_blank" hidefocus="true">瘫痪</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/669/index.html" target="_blank" hidefocus="true">脊髓损伤</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/671/index.html" target="_blank" hidefocus="true">脊髓空洞</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/672/index.html" target="_blank" hidefocus="true">脊髓病变</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/673/index.html" target="_blank" hidefocus="true">肌营养不良</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/674/index.html" target="_blank" hidefocus="true">肌肉萎缩</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/675/index.html" target="_blank" hidefocus="true">格林巴利</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/676/index.html" target="_blank" hidefocus="true">共济失调</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/738/index.html" target="_blank" hidefocus="true">抽动症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/754/index.html" target="_blank" hidefocus="true">羊癫疯</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/755/index.html" target="_blank" hidefocus="true">羊角风</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/792/index.html" target="_blank" hidefocus="true">头痛</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/804/index.html" target="_blank" hidefocus="true">神经衰弱</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/818/index.html" target="_blank" hidefocus="true">脑膜炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/862/index.html" target="_blank" hidefocus="true">特发性震颤</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/865/index.html" target="_blank" hidefocus="true">多发性硬化</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/879/index.html" target="_blank" hidefocus="true">神经性厌食症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/886/index.html" target="_blank" hidefocus="true">神经炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/938/index.html" target="_blank" hidefocus="true">脊髓型颈椎病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1057/index.html" target="_blank" hidefocus="true">眩晕症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1102/index.html" target="_blank" hidefocus="true">脑疝</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1103/index.html" target="_blank" hidefocus="true">外伤性癫痫</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1105/index.html" target="_blank" hidefocus="true">颞叶癫痫</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1106/index.html" target="_blank" hidefocus="true">原发性癫痫</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1109/index.html" target="_blank" hidefocus="true">难治性癫痫</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1110/index.html" target="_blank" hidefocus="true">额叶癫痫</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1140/index.html" target="_blank" hidefocus="true">结核性脑膜炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1198/index.html" target="_blank" hidefocus="true">急性脊髓炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1201/index.html" target="_blank" hidefocus="true">脑病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1203/index.html" target="_blank" hidefocus="true">帕金森病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1204/index.html" target="_blank" hidefocus="true">偏头疼</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1205/index.html" target="_blank" hidefocus="true">帕金森综合症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1206/index.html" target="_blank" hidefocus="true">肋间神经痛</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1207/index.html" target="_blank" hidefocus="true">阿尔茨海默病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1226/index.html" target="_blank" hidefocus="true">肌营养不良症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1283/index.html" target="_blank" hidefocus="true">臂丛神经痛</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1289/index.html" target="_blank" hidefocus="true">不安腿综合征</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1316/index.html" target="_blank" hidefocus="true">丛集性头痛</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1365/index.html" target="_blank" hidefocus="true">疯牛病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1387/index.html" target="_blank" hidefocus="true">高血压脑病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1417/index.html" target="_blank" hidefocus="true">记忆障碍</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1475/index.html" target="_blank" hidefocus="true">面神经炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1476/index.html" target="_blank" hidefocus="true">脑梗死</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1478/index.html" target="_blank" hidefocus="true">脑炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1529/index.html" target="_blank" hidefocus="true">失语症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1534/index.html" target="_blank" hidefocus="true">视神经脊髓炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1535/index.html" target="_blank" hidefocus="true">视神经炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1583/index.html" target="_blank" hidefocus="true">细菌性脑膜炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1623/index.html" target="_blank" hidefocus="true">烟雾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1663/index.html" target="_blank" hidefocus="true">周围神经炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1667/index.html" target="_blank" hidefocus="true">蛛网膜炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1676/index.html" target="_blank" hidefocus="true">坐骨神经痛</a>
+
+							<a href="http://ci.qiuyi.cn/html/disease/10/index.html" target="_blank" hidefocus="true">感染科</a>
+
+																			<a href="http://ci.qiuyi.cn/html/disease/73/index.html" target="_blank" hidefocus="true">感染性疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/74/index.html" target="_blank" hidefocus="true">成人发热待查</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/75/index.html" target="_blank" hidefocus="true">肝硬化 </a>
+																				<a href="http://ci.qiuyi.cn/html/disease/76/index.html" target="_blank" hidefocus="true">自身免疫性肝病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/77/index.html" target="_blank" hidefocus="true">病毒性肝炎 </a>
+																				<a href="http://ci.qiuyi.cn/html/disease/78/index.html" target="_blank" hidefocus="true">脂肪肝</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/79/index.html" target="_blank" hidefocus="true">小儿肝病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/80/index.html" target="_blank" hidefocus="true">小儿感染性疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1059/index.html" target="_blank" hidefocus="true">出血热</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1335/index.html" target="_blank" hidefocus="true">登革出血热</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1397/index.html" target="_blank" hidefocus="true">弓形虫病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1674/index.html" target="_blank" hidefocus="true">纵隔炎</a>
+
+							<a href="http://ci.qiuyi.cn/html/disease/11/index.html" target="_blank" hidefocus="true">血液科</a>
+
+																			<a href="http://ci.qiuyi.cn/html/disease/81/index.html" target="_blank" hidefocus="true">POEMS综合征</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/82/index.html" target="_blank" hidefocus="true">淋巴瘤</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/83/index.html" target="_blank" hidefocus="true">贫血</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/85/index.html" target="_blank" hidefocus="true">白血病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/86/index.html" target="_blank" hidefocus="true">骨髓移植</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/87/index.html" target="_blank" hidefocus="true">出血性疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/88/index.html" target="_blank" hidefocus="true">血液内科疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/592/index.html" target="_blank" hidefocus="true">白塞氏病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1023/index.html" target="_blank" hidefocus="true">特发性血小板减少性紫癜</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1060/index.html" target="_blank" hidefocus="true">骨髓增生异常综合征</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1061/index.html" target="_blank" hidefocus="true">急性淋巴细胞白血病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1065/index.html" target="_blank" hidefocus="true">淀粉样变性</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1066/index.html" target="_blank" hidefocus="true">血色病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1068/index.html" target="_blank" hidefocus="true">溶血</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1137/index.html" target="_blank" hidefocus="true">甘油三酯高</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1208/index.html" target="_blank" hidefocus="true">巨幼细胞性贫血</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1229/index.html" target="_blank" hidefocus="true">结节性多动脉炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1264/index.html" target="_blank" hidefocus="true">败血症</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1321/index.html" target="_blank" hidefocus="true">大动脉炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1349/index.html" target="_blank" hidefocus="true">动脉炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1614/index.html" target="_blank" hidefocus="true">血清病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1648/index.html" target="_blank" hidefocus="true">原发性血小板减少性紫癜</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1651/index.html" target="_blank" hidefocus="true">再生障碍性贫血</a>
+
+							<a href="http://ci.qiuyi.cn/html/disease/12/index.html" target="_blank" hidefocus="true">肝病科</a>
+
+																			<a href="http://ci.qiuyi.cn/html/disease/89/index.html" target="_blank" hidefocus="true">肝硬化</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/90/index.html" target="_blank" hidefocus="true">自身免疫性肝病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/91/index.html" target="_blank" hidefocus="true">病毒性肝炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/92/index.html" target="_blank" hidefocus="true">脂肪肝</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/93/index.html" target="_blank" hidefocus="true">肝病内科疾病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/94/index.html" target="_blank" hidefocus="true">肝移植</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/95/index.html" target="_blank" hidefocus="true">门静脉高压</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/96/index.html" target="_blank" hidefocus="true">妊娠合并肝炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/583/index.html" target="_blank" hidefocus="true">乙肝</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/611/index.html" target="_blank" hidefocus="true">肝腹水</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/722/index.html" target="_blank" hidefocus="true">酒精肝</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/723/index.html" target="_blank" hidefocus="true">肝囊肿</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/724/index.html" target="_blank" hidefocus="true">肝炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/739/index.html" target="_blank" hidefocus="true">丙肝</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1219/index.html" target="_blank" hidefocus="true">原发性胆汁性肝硬化</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1220/index.html" target="_blank" hidefocus="true">酒精性肝病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1221/index.html" target="_blank" hidefocus="true">胆汁性肝硬化</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1352/index.html" target="_blank" hidefocus="true">多囊肝</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1376/index.html" target="_blank" hidefocus="true">肝昏迷</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1378/index.html" target="_blank" hidefocus="true">肝肾综合征</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1381/index.html" target="_blank" hidefocus="true">肝吸虫病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1382/index.html" target="_blank" hidefocus="true">肝性脑病</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1418/index.html" target="_blank" hidefocus="true">甲肝</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1419/index.html" target="_blank" hidefocus="true">甲型肝炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1644/index.html" target="_blank" hidefocus="true">淤胆型肝炎</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1702/index.html" target="_blank" hidefocus="true">小二阳</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1703/index.html" target="_blank" hidefocus="true">大二阳</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1704/index.html" target="_blank" hidefocus="true">小三阳</a>
+																				<a href="http://ci.qiuyi.cn/html/disease/1705/index.html" target="_blank" hidefocus="true">大三阳</a>
+
+
+					</div>
+				</div>
+
+
+	</div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+function submit_shows(){				  
+	$(".log_f").show();				 
+}
+function closed(){
+	$('.log_f').hide();
+}
+function submit_login() {
+	var username = $("input[name='name']").val();
+	var password = $("input[name='password']").val();
+	var verify = $("input[name='verify']").val();
+	var loginOriginator = $("input[name='loginOriginator']").val();
+	var did = '';
+	if(username==''){
+		alert("用户名不能为空！");
+		return false;
+	}
+	if(password==''){
+		alert("密码不能为空！");
+		return false;
+	}	
+	if(verify==''){
+		alert("验证码不能为空！");
+		return false;
+	}	
+	else{
+	$.ajax({
+		type:'POST',
+		url:'http://ci.qiuyi.cn/login/quicklog',
+		data:'username='+username+'&password='+password+'&verify='+verify,
+		success:function(data){					
+			if(data==2){
+				alert("请检查用户名输入是否正确！");
+				location.reload();
+			}
+			else if(data==3){
+				alert("请检查密码输入是否正确！");
+				location.reload();
+			}
+			else if(data==4){
+				alert("您输入的验证码有错误！");
+				location.reload();
+			}
+			else if(data==5){
+				alert("您输入的用户名或密码不正确！");
+				location.reload();
+			}
+			else if(data==6){					
+				location.reload();
+			}
+			else{
+				alert("登录失败，请稍后再试！");
+				location.reload();
+			}
+		}
+    })
+	}
+}
+</script>
+<style>
+.pv_08{padding-top:40px;font-family:"微软雅黑"}.pv_08 span{float:left}.pv_08 div.pv_08_l1{width:240px;float:left;margin-left:20px;background:url(http://s1.qiuyi.cn/qiuyi/common/pv_list.jpg) right no-repeat}.pv_08 div.pv_08_l1 dl{width:80px;float:left}.pv_08 div.pv_08_l1 dl dt,.pv_08 div.pv_08_l2 h2,.pv_08 div.pv_08_l3 h2{font-size:14px;line-height:35px}.pv_08 div.pv_08_l1 dl dd p{line-height:28px}.pv_08 div.pv_08_l1 dl dd p a,.pv_08 div.pv_08_l2 ul li a,.pv_08 div.pv_08_l3 ul li a{color:#646464}.pv_08 div.pv_08_l2{width:320px;float:left;margin-left:20px;background:url(http://s1.qiuyi.cn/qiuyi/common/pv_list.jpg) right no-repeat}.pv_08 div.pv_08_l2 ul li{width:62px;float:left;line-height:28px}.pv_08_l3{width:165px;float:right}.pv_08 div.pv_08_l3 ul li{width:55px;float:left;line-height:28px}.bottom_pv08{height:85px;background:#fafafa;padding-top:30px}.pv8_bt{width:960px;height:51px;margin:0 auto;background:url(http://s1.qiuyi.cn/qiuyi/common/pv_logo.jpg) 110px no-repeat;font-family:"微软雅黑"}.pv8_bt p,.pv8_bt span{float:left;display:block;margin-left:170px}.pv8_bt p{line-height:25px}.pv8_bt span{width:785px;margin-left:175px;color:#999}.pv8_bt p a{margin:0 5px}.pv_08 div.pv_08_l1 dl dd p a:hover,.pv_08 div.pv_08_l2 ul li a:hover,.pv_08 div.pv_08_l3 ul li a:hover{color:#3EB79D}.bottom_xindex{border-top:3px solid #dedede;margin-top:10px}.footer_xindex{width:960px;margin:0 auto}.footer1{width:400px;float:left;margin-top:20px}.footer1 ul li{float:left;text-align:center;line-height:30px;margin-right:40px}.footer1 ul li b{font-size:14px}.footer_400{float:left;border-left:1px solid #E0E0E0;border-right:1px solid #E0E0E0;padding:0 10px;margin-top:50px}.footer2{float:right;margin-top:20px}.footer2 h2{font-size:14px}.footer2 ul li{float:left;margin-top:10px;margin-left:15px}.footer3{display:block;margin-top:10px}.footer3 p{text-align:center;display:block;line-height:25px}					
+</style>
+<div class="bottom_xindex">
+	<div class="footer_xindex">
+		<div class="pv_08 clearfix">
+			<span><img src="http://s1.qiuyi.cn/qiuyi/common/pv_03.jpg"></span>
+			<div class="pv_08_l1">
+				<dl>
+					<dt>
+						在线查找
+					</dt>
+					<dd>
+						<p><a target="_blank" href="http://www.qiuyi.cn/diseasezt/index.html">疾病库</a></p>
+						<p><a target="_blank" href="http://ypk.qiuyi.cn/index.html">药品库</a></p>
+						<p><a target="_blank" href="http://zzk.qiuyi.cn/">症状库</a></p>
+						<p><a target="_blank" href="http://www.qiuyi.cn/ghospitals">找医院</a></p>
+						<p><a target="_blank" href="http://www.qiuyi.cn/doctors">找医生</a></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						健康助手
+					</dt>
+					<dd>
+						<p><a target="_blank" href="http://ask.qiuyi.cn/">免费问答</a></p>
+						<p><a target="_blank" href="http://ci.qiuyi.cn/">疾病百科</a></p>
+						<p><a target="_blank" href="http://doctor.qiuyi.cn/">悬赏求医</a></p>
+						<p><a target="_blank" href="http://hyd.qiuyi.cn/">化验单</a></p>
+						<p><a target="_blank" href="http://tuku.qiuyi.cn/">疾病图库</a></p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						健康咨询
+					</dt>
+					<dd>
+						<p><a target="_blank" href="http://news.qiuyi.cn/">新闻中心</a></p>
+						<p><a target="_blank" href="http://zj.qiuyi.cn/">专家访谈</a></p>
+						<p><a target="_blank" href="http://share.qiuyi.cn/">经验分享</a></p>
+						<p><a target="_blank" href="http://weixin.qiuyi.cn/">微信广场</a></p>
+						<p><a target="_blank" href="http://yz.qiuyi.cn/">专家义诊</a></p>
+					</dd>
+				</dl>
+			</div>
+			<div class="pv_08_l2">
+				<h2>常见疾病</h2>
+				<ul>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/wa/">胃癌</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/ylb/">鱼鳞病</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/npx/">牛皮癣</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/wybb/">外阴白斑</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/jrsy/">尖锐湿疣</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/ga/">肝癌</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/sjs/">肾积水</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/bdf/">白癜风</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/qlxa/">前列腺炎</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/szqpz/">生殖器疱疹</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/fa/">肺癌</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/gyh/">肝硬化</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/dxb/">癫痫病</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/zgjl/">子宫肌瘤</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/ggths/">股骨头坏死</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/jk/">甲亢</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/rxa/">乳腺癌</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/lbl/">淋巴瘤</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/lcnz/">卵巢囊肿</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/zzjwl/">重症肌无力</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/yg/">乙肝</a></li>
+					<li><a target="_blank" href="http://www.qiuyi.cn/department/731/index.html">类风湿</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/jzb/">颈椎病</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/xent/">小儿脑瘫</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/qzxjzy/">强直脊柱炎</a></li>
+				</ul>
+			</div>
+			<div class="pv_08_l3">
+				<h2>科室导航</h2>
+				<ul>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/nk/">男科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/yk/">眼科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/zlk/">肿瘤科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/fk/">妇科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/ganbing/">肝病科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/sbk/">肾病科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/ck/">产科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/kq/">口腔科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/sjk/">神经科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/erke/">儿科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/pfbk/">皮肤科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/xbk/">性病科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/gk/">骨科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/fsk/">风湿科</a></li>
+					<li><a target="_blank" href="http://jibing.qiuyi.cn/">更多>></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bottom_pv08">
+	<div class="pv8_bt">
+		<p><a target="_blank" href="http://www.qiuyi.cn/company/index">关于我们</a>|<a target="_blank" href="http://www.qiuyi.cn/company/recruit">招贤纳士</a>|<a target="_blank" href="http://www.qiuyi.cn/company/contact">联系我们</a>|<a target="_blank" href="http://www.qiuyi.cn/company/serve">用户协议</a>|<a target="_blank" href="http://www.qiuyi.cn/company/help">帮助中心</a>|<a target="_blank" href="http://www.qiuyi.cn/company/map">网站地图</a>|<a target="_blank" href="http://www.qiuyi.cn/company/hezuo/">内容合作</a>|<a target="_blank" href="http://www.qiuyi.cn/link">友情链接</a>|<a target="_blank" href="http://weibo.com/qiuyiwenda">新浪微博</a>                </p>
+		<span>免责声明：本站所有建议仅供用户参考。但不可代替专业医师诊断、不可代替医师处方，请谨慎参阅，本站不承担由此引起的相关责任。</span>
+		<span>Copyright   &copy; 2015 QIUYI.CN <a target="_blank" href="http://www.qiuyi.cn/company/zheng/">京ICP证111012号</a> <a target="_blank" href="http://www.qiuyi.cn/company/zheng/">京公网安备110105012994</a> <a target="_blank" href="http://www.miibeian.gov.cn/">京ICP备11039101号</a> <a target="_blank" href="http://www.qiuyi.cn/company/yzheng">互联网药品信息服务资格证书</a></span>
+	</div>
+</div>
+<script src="http://s1.qiuyi.cn/baike/public/js/qy1231_bk.js" type="text/javascript" charset="utf-8"></script>
+<!--返回顶部 start-->
+<script type="text/javascript" src="http://s1.qiuyi.cn/qiuyi/js/jstools_mini.js"></script>
+<a class="gotop" id="gotop"></a>
+<script type="text/javascript">jstools.gotop("#gotop");</script>
+<!--返回顶部 end-->
+<script src="http://s1.qiuyi.cn/public/login/js/jquery.login.1.0.js"></script>
+<script type="text/javascript">
+function search(){
+	var key = $("#q").val();
+	if( key== '' || key=='搜索疾病、药品、器械'){
+		alert("请输入关键词");die;
+	}else{	
+		window.open('http://so.qiuyi.cn/search.php?rank=baike&q='+key);
+	}
+}
+</script>
+<!--baidu tongji start-->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ffc8854f36d7eff653819b3150d1208ed' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<!--baidu tongji end-->
+<script src=' http://w.cnzz.com/c.php?id=30046453' language='JavaScript'></script>
+</body>
+</html>

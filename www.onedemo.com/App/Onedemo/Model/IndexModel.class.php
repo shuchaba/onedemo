@@ -8,5 +8,7 @@
 namespace Think\Model;
 use Think\Model;
 class IndexModel extends Model{
-
+//    protected $tableName = 'malady';
+//    protected $dbName = 'malady';
+//    protected $trueTableName = 'malady';
 }
